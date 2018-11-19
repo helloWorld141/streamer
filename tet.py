@@ -1,11 +1,11 @@
-#!/home/ubuntu/env/kafka-python/bin/python
+#!/home/choiru1/environments/kafka-python/bin/python
 from confluent_kafka import Consumer, KafkaError
 import time
 c = Consumer({
     'bootstrap.servers': '43.240.97.180:9092',
     'group.id': 'mygroup',
     'default.topic.config': {
-        'auto.offset.reset': 'smallest'
+    	'auto.offset.reset': 'smallest'
     }
 })
 c.subscribe(['stream-sim'])

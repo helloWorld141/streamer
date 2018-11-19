@@ -2,7 +2,7 @@ from confluent_kafka import Consumer, KafkaError
 import time
 
 c = Consumer({
-    'bootstrap.servers': '43.240.97.180:9092',
+    'bootstrap.servers': 'kafka-master:9092',
     'group.id': 'mygroup',
     'default.topic.config': {
         'auto.offset.reset': 'smallest'
